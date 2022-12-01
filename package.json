@@ -1,0 +1,23 @@
+{
+  "name": "05-signup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airidasju/05-signUp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/airidasju/05-signUp/issues"
+  },
+  "homepage": "https://github.com/airidasju/05-signUp#readme",
+  "devDependencies": {
+    "dead-server": "^1.0.9"
+  }
+}
