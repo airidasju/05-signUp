@@ -1,0 +1,162 @@
+.bluring {
+    background:linear-gradient(190deg, rgba(11, 42, 219, 0.4), rgba(77, 2, 121, 0.9)),url("/img/background.png") no-repeat center center fixed; 
+         position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        -webkit-filter: blur(15px); /* Safari 6.0 - 9.0 */
+        filter: blur(15px);
+        transform: scale(1.1); 
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    min-height: 100vh;
+    margin-left: 2%;
+    margin-right: 2%;}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column.right {
+    gap: 60px;
+    background-color: rgb(255,255,255);
+    height: 500px;
+    width: 480px;
+    justify-content: center;
+    padding: 0px 70px;
+    
+}
+
+
+.column.left {
+    background-image:
+    linear-gradient(190deg, rgba(11, 42, 219, 0.4), rgba(77, 2, 121, 0.9)),
+    url('/img/design.png');
+    width: 300px;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    color:white;
+}
+
+.column.left > h1{
+ position: absolute; 
+ margin-top: 40px;
+ left: 40px;
+ font-size: 40px;
+ font-weight: lighter;
+ 
+}
+
+.column.left > .privacy{
+    position: absolute; 
+    margin-top: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color:white;
+   }
+
+   .privacy > a {
+    color: white;
+    border-bottom: 1px dotted white;
+   }
+
+   .column.right > .short-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-top: -20px;
+   }
+
+   .short-row > a:first-child {
+    background: linear-gradient(90deg, rgb(28,77,215), rgb(3,100,222));
+    padding: 9px 40px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+   }
+
+   .short-row > p > a {
+    color:blue;
+    font-weight:bolder;
+   }
+
+.column.right > p {
+    position: relative;
+    margin-top: 5px;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    padding: 5px;
+}
+
+.column.right > p::before {
+    position: absolute;
+    margin-top: -25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgb(197, 197, 197);
+}
+
+.column.right > p:nth-child(1) {
+    margin-top: 30px;
+}
+
+.column.right > p:nth-child(1)::before {
+    content: "Username";
+}
+
+.column.right > p:nth-child(2)::before {
+    content: "E-Mail"
+}
+
+.column.right > p:nth-child(3)::before {
+    content: "Password"
+}
+
+.column.right > p:nth-child(4)::before {
+    content: "Repeat Password";
+}
+
+.privacy-secondary {
+    margin-top: -40px;
+    display: none;
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    .column.left {
+        display: none;
+    }
+    .column.right {
+        padding: 35px;
+    }
+    .privacy-secondary {
+        display:block;
+    }
+}
+
+@media (max-width: 415px) {
+    .short-row > a:first-child {
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+    .column.right {
+        padding: 25px;
+    }
+}
+
+
